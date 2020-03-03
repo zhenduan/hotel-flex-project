@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Css */
+body{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+
+}
+
+p{
+  margin: 0.75rem 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* Utility Classes */
+.text-primary{
+  color: #93cb52;
+}
+
+.l-heading{
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+
+.lead{
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+/* .py-1{padding: 1.5rem 0;} */
+/* .py-2{padding: 2rem 0;} */
+.py-3{padding: 3rem 0;}
+
+.btn{
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.75rem;
+  border: none;
+  width: 8rem;
+  align-self: center;
+  border-radius: 5px;
+
+}
+
+.btn:hover{
+  background: #506e2e;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark{
+  color: #fff;
+  background: #333;
+}
+
+.m-heading{
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+/* Nav Bar */
+#navbar{
+  display: flex;
+  background: #222;
+  color: #fff;
+  justify-content: space-between;
+  padding: 0.75rem;
+  
+}
+
+/* 感觉h1是自动就上下居中了？？？ */
+#navbar h1{
+  align-items: center;
+}
+
+
+#navbar ul{
+  display: flex;
+  list-style: none;
+  /* 上下居中 */
+  align-items: center;
+}
+
+#navbar ul li{
+}
+
+#navbar ul li a{
+  color: #fff;
+  padding: 0.75rem;
+  /* text-align: center; */
+  margin: 0 0.25rem;
+
+}
+
+#navbar ul li a:hover{
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+
+/* Showcase */
+
+#showcase{
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url(../img/showcase.jpg) no-repeat center center/cover;
+  background-size: cover;
+}
+
+#showcase .showcase-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  padding: 0 1.75rem;
+  /* Add Overlay */
+  /* position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4); */
+
+}
+
+#what h1{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* What Section */
+.items{
+  display: flex;
+
+}
+
+.item{
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+#what .items .item i{
+  background: #93cb52;
+  padding: 1.2rem;
+  margin-bottom: 0.75rem;
+  border-radius: 50%;
+}
+
+/* Who We Are */
+#who{
+  display: flex;
+  flex: 1;
+}
+
+#who div{
+  flex: 1;
+}
+#who .photo{
+  background: url("../img/people.jpg") no-repeat center center/cover;
+} 
+
+#who .team-content{
+  padding: 1rem;
+
+}
+
+#who ul{
+  list-style: none;
+}
+
+#who ul li{
+  border-bottom: 1px #575656 solid;
+}
+
+/* Clients */
+
+#clients h2{
+  text-align: center;
+  margin: 1.75rem;
+}
+
+/* logos */
+
+#clients .logos .logo img{
+  width: 7rem;
+}
+
+#clients .logos{
+  display: flex;
+}
+
+#clients .logos .logo{
+  flex: 1;
+}
+
+/* Contact Section */
+#contact{
+  display: flex;
+}
+
+#contact .contact-form{
+  background: #93cb52;
+  padding: 1rem 2rem;
+  flex: 1;
+  color: #fff;
+}
+
+#contact .contact-form form label{
+  font-size: 1.15rem;
+  padding-bottom: 0.25rem;
+  display: block;
+}
+
+#contact .contact-form form input{
+  margin-bottom: 0.25rem;
+  height: 1.85rem;
+  padding: 0.35rem;
+  width: 100%;
+}
+
+#contact .contact-form form textarea{
+  width: 100%;
+  padding: 0.35rem;
+  height: 9rem;
+
+}
+
+#contact .contact-form form button{
+  background: #444;
+  color: #fff;
+  width: 100%;
+  height: 1.75rem;
+  border: none;
+}
+
+#contact .contact-form form button:hover{
+  background: #666;
+}
+
+.map{
+  flex: 1;
+  
+}
+
+/* footer */
+footer{
+  background: #333;
+  height: 3rem;
+}
+
+footer p{
+  margin: 0;
+  text-align: center;
+  /* margin: 1rem; */
+  padding: 0.75rem;
+  color: #fff;
+  
+}
